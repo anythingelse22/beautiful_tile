@@ -220,5 +220,3 @@ function create_descr_stats(idx, main_div) {
 	}
 
 }
-
-}
