@@ -13,4 +13,4 @@ function render_str() {
 
 	em.innerText = arr.email
 	ph.innerText = arr.phone
-}
+};
