@@ -194,4 +194,4 @@ function arrow_onClickPress(event) {
 
 	cont.remove()
 	enable_big_image(cur_img_idx)
-}
+};
