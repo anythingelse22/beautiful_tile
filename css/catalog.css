@@ -133,10 +133,13 @@
 	font-size: 22px;
 
 	cursor: pointer;
+/*	background-color: rgba(146, 145, 145, 0.514); */
+	background-color: white;
+	color: rgba(80, 80, 80, 0.836);
+
 	border: none;
-	border-radius: 10px;
-	background-color: rgba(190, 190, 190, 0.514);
-	color: rgb(80, 80, 80);
+	border-radius: 50px;
+	box-shadow: 1px 1px 5px rgba(146, 145, 145, 0.603), -1px -1px 5px rgba(146, 145, 145, 0.596);
 }
 
 .descr_btn:hover {
@@ -145,10 +148,16 @@
 	transition: color 0.25s, background-color 0.25s;
 }
 
+@media (min-width: 1000px) {
+	.descr_btn {
+		padding: 1.5%;
+	}
+}
+
 @media (max-width: 800px) {
 	.descr_btn {
 		font-size: 15px;
-		padding: 3%;
+		padding: 2%;
 	}
 }
 
