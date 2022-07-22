@@ -1,0 +1,304 @@
+body {
+	font-family: "Open Sans", Montserrat, Roboto, Arial;
+	padding: 0;
+	margin: 0;
+}
+
+/* rgb(238, 141, 76); */
+
+
+/* --- Header --- */
+.header_main {
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+}
+
+/* background */
+.header_main::before {
+	display: inline-block;
+	min-width: 340px;
+
+	content: "";
+	background: url("../imgs/index/head_bg.jpg");
+	background-position: center;
+	background-size: cover;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	opacity: 0.7;
+	z-index: -100;
+}
+
+.header_flex {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 40px;
+}
+
+/* image */
+.head_left {
+	display: block;
+	width: 200px;
+	padding: 12px 0px 0px 15px;
+}
+
+.head_logo_link {
+	width: inherit;
+}
+
+.head_logo {
+	width: inherit;
+}
+
+/* contacts */
+.head_right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 25px 70px 0 0;
+}
+
+/* mail and phone */
+.head_right_mail, .head_right_phone {
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+	opacity: 0.8;
+}
+
+.email, .phone {
+	width: 35px;
+}
+
+.mail_p, .phone_p {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	.email, .phone {
+		width: 30px;
+	}
+	.mail_p, .phone_p {
+		font-size: 80%;
+	}
+	.head_left {
+		width: 160px;
+	}
+	.head_right {
+		padding: 2px 10px 0 0;
+	}
+	.header_flex {
+		column-gap: 20px;
+	}
+}
+
+@media (max-width: 410px) {
+	.email, .phone {
+		width: 25px;
+	}
+	.mail_p, .phone_p {
+		font-size: 75%;
+	}
+	.head_right {
+		padding: 2px 10px 0 0;
+	}
+	.header_flex {
+		column-gap: 15px;
+	}
+}
+
+@media (max-width: 385px) {
+	.email, .phone {
+		width: 20px;
+	}
+	.mail_p, .phone_p {
+		font-size: 65%;
+	}
+	.head_left {
+		padding: 5px 0 0 5px;
+	}
+	.head_right {
+		padding: 2px 10px 0 0;
+	}
+	.header_flex {
+		column-gap: 10px;
+	}
+}
+
+
+/* --- Panel --- */
+.links_panel {
+	display: flex;
+	width: 100%;
+	background-color: rgb(238, 141, 76);
+	box-shadow:  inset 0px -2px 2px white;
+	align-items: center;
+	justify-content: end;
+	box-sizing: border-box;
+	min-width: 340px;
+	margin-bottom: 7%;
+}
+
+.head_text_div {
+	padding: 10px 50px 12px 0;
+}
+
+.art_head {
+	box-sizing: border-box;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.849);
+}
+
+.art_head:hover {
+	transition: color 0.2s;
+	color: rgb(189, 80, 7);
+}
+
+@media (max-width: 600px) {
+	.head_text_div {
+		padding: 4px 25px 6px 0;
+	}
+	.art_head {
+		font-size: 15px;
+	}
+}
+
+/* --- Page descr --- */
+
+/* text */
+.page_text_div {
+	width: 50%;
+	margin: 5% auto;
+}
+
+.text_div {
+	font-family: Roboto;
+	font-weight: 300;
+	text-indent: 5%;
+	font-size: 25px;
+	line-height: 150%;
+	color: transparent;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+/* img */
+.page_img_cont {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin: auto;
+	box-shadow: inset 3rem 3rem 50px rgb(255, 255, 255), inset -3rem -3rem 50px rgb(255, 255, 255);
+}
+
+.page_img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: -1;
+}
+
+@media (max-width: 1100px) {
+	.page_text_div {
+		width: 60%;
+	}
+	.text_div {
+		font-size: 22px;
+		line-height: 160%;
+	}
+	.page_img_cont {
+		width: 65%;
+	}
+}
+
+@media (max-width: 900px) {
+	.page_text_div {
+		width: 75%;
+	}
+	.text_div {
+		font-size: 20px;
+		line-height: 170%;
+	}
+	.page_img_cont {
+		width: 80%;
+	}
+}
+
+@media (max-width: 700px) {
+	.page_text_div {
+		width: 75%;
+	}
+	.text_div {
+		font-size: 18px;
+		line-height: 180%;
+	}
+	.page_img_cont {
+		width: 90%;
+	}
+}
+
+@media (max-width: 500px) {
+	.page_text_div {
+		width: 75%;
+	}
+	.text_div {
+		font-size: 15px;
+		line-height: 190%;
+	}
+	.page_img_cont {
+		width: 100%;
+	}
+}
+
+
+
+/* --- footer --- */
+.foot_main {
+	margin-top: 12%;
+	height: 150px;
+	background-color: rgb(39, 39, 39);
+}
+
+.foot_div {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 5%;
+}
+
+.foot_text {
+
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.foot_text:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+	.foot_main {
+		height: 100px;
+	}
+	.foot_text {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 500px) {
+	.foot_main {
+		height: 75px;
+	}
+	.foot_text {
+		font-size: 11px;
+	}
+}

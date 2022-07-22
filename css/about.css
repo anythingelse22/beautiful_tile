@@ -1,0 +1,75 @@
+#abt_id {
+	color: rgb(189, 80, 7);
+}
+
+.links_panel {
+  margin-bottom: 5%;
+}
+
+/* title */
+.about_title {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.title_text {
+  margin: 0;
+
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  font-size: 50px;
+
+  color: rgb(80, 80, 80);
+}
+
+hr {
+  width: 80%;
+}
+
+/* descr and address */
+.about_top {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.top_p {
+  display: flex;
+  width: 80%;
+  margin: 0;
+  padding: 5%;
+  font-size: 20px;
+  text-indent: 5%;
+}
+
+@media (max-width: 650px) {
+  .title_text {
+    font-size: 35px;
+  }
+  .top_p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 475px) {
+  .title_text {
+    font-size: 30px;
+  }
+  .top_p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 475px) {
+  .title_text {
+    font-size: 25px;
+  }
+  .top_p {
+    font-size: 14px;
+  }
+}
+
