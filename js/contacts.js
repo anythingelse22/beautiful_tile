@@ -17,4 +17,4 @@ function add_contacts() {
 		main_cont.appendChild(text_cont)
 	}
 
-}
+};
