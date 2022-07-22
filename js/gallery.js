@@ -60,8 +60,8 @@ function create_elems(str) {
 	const bg_obj = document.createElement("div")
 	bg_obj.setAttribute("class", "image_bg")
 	bg_obj.id = "img_bg_" + str
-	bg_obj.addEventListener("click", bg_onClick)
 	img_cont.appendChild(bg_obj)
+	bg_obj.addEventListener("click", bg_onClick)
 
 	// how tf do i pass arguments to event handlers
 	grid_ar[str] = grid_ar[str] || []
@@ -93,15 +93,15 @@ function enable_big_image(idx) {
 	// new container
 	const big_img_cont = document.createElement("div")
 	big_img_cont.setAttribute("class", "big_image_cont")
-	big_img_cont.addEventListener("click", big_img_cont_onClick)
 	big_img_cont.id = "big_image_cont_id"
 	document.body.appendChild(big_img_cont)
+	big_img_cont.addEventListener("click", big_img_cont_onClick)
 
 	// left arrow
 	const left_arrow = document.createElement("div")
 	left_arrow.setAttribute("class", "arrow_left")
-	left_arrow.addEventListener("click", arrow_onClickPress)
 	big_img_cont.appendChild(left_arrow)
+	left_arrow.addEventListener("click", arrow_onClickPress)
 
 	const left_mini_arrow = document.createElement("img")
 	left_mini_arrow.setAttribute("class", "arrow_mini_left")
@@ -128,8 +128,8 @@ function enable_big_image(idx) {
 	// right arrow
 	const right_arrow = document.createElement("div")
 	right_arrow.setAttribute("class", "arrow_right")
-	right_arrow.addEventListener("click", arrow_onClickPress)
 	big_img_cont.appendChild(right_arrow)
+	right_arrow.addEventListener("click", arrow_onClickPress)
 
 	const right_mini_arrow = document.createElement("img")
 	right_mini_arrow.setAttribute("class", "arrow_mini_right")
