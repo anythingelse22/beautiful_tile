@@ -2,11 +2,12 @@
 	color: rgb(189, 80, 7);
 }
 
-#map {
+.map_scr {
   height: 400px;
   width: 80%;
 	margin: auto;
 }
+
 
 .links_panel {
   margin-bottom: 5%;
