@@ -111,8 +111,8 @@ function render_items() {
 		descr_btn.setAttribute("class", "descr_btn")
 		descr_btn.saved_idx = i
 		descr_btn.innerText = "Подробнее"
-		descr_btn.addEventListener("click", descr_cb)
 		descr_bot_cont.appendChild(descr_btn)
+		descr_btn.addEventListener("click", descr_cb)
 
 	}
 
@@ -138,8 +138,8 @@ function create_descr(idx) {
 	// background
 	const descr_bg = document.createElement("div")
 	descr_bg.setAttribute("class", "big_descr_bg")
-	descr_bg.addEventListener("click", remove_big_descr)
 	document.body.appendChild(descr_bg)
+	descr_bg.addEventListener("click", remove_big_descr)
 
 	// main
 	const descr_main = document.createElement("div")
@@ -218,5 +218,7 @@ function create_descr_stats(idx, main_div) {
 		}
 
 	}
+
+}
 
 }
